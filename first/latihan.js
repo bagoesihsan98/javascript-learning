@@ -6,5 +6,5 @@ if(konfirmasi === true)
     alert("Nama kamu adalah, " + nama);
 }else
 {
-    alert("Cyka Blyat");
+    alert("Sampai jumpa");
 }
