@@ -1,10 +1,8 @@
-var nama = prompt("Masukkan nama anda : ");
-var konfirmasi = confirm("Apakah anda yakin ?");
+var ulang = true;
 
-if(konfirmasi === true)
+
+while(ulang)
 {
-    alert("Nama kamu adalah, " + nama);
-}else
-{
-    alert("Sampai jumpa");
+    console.log("Saya belajar JavaScript");
+    ulang = confirm("Melakukannya lagi ?");
 }
