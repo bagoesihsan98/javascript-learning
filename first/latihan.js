@@ -1,8 +1,7 @@
-var ulang = true;
+var nilai = 1;
 
-
-while(ulang)
+while(nilai <= 5)
 {
-    console.log("Saya belajar JavaScript");
-    ulang = confirm("Melakukannya lagi ?");
+    console.log("Hello World, ini yang ke " + nilai);
+    nilai++;
 }
