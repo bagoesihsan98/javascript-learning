@@ -1,16 +1,8 @@
-var statusAngkot = true;
-var nomorAngkot = 1;
+var jmlhAngkot = 10;
+var noAngkot = 1;
 
-while(statusAngkot)
+while(noAngkot <= jmlhAngkot)
 {
-    if(nomorAngkot <= 10)
-    {
-        console.log("Angkot No. " + nomorAngkot + " beroperasi dengan baik.");
-        nomorAngkot++;
-        statusAngkot = confirm("Apakah akan menjalankan angkot lagi ?");
-    }else
-    {
-        console.log("Mohon maaf, jumlah armada angkot hanya sebanyak 10 buah.")
-        statusAngkot = false;
-    }
+    console.log("Angkot dengan nomor " + noAngkot + " beroperasi dengan baik.");
+    noAngkot++;
 }
