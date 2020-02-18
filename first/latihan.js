@@ -1,13 +1,27 @@
-var jmlhAngkot = 10;
-var angkotBeroperasi = 6;
+var angka = 0;
+var jmlhAngka = prompt("Masukkan jumlah angka");
 
-for (var noAngkot = 1; noAngkot <= jmlhAngkot; noAngkot++)
+// Pengulangan dan Pengkondisian
+
+if(isNaN(jmlhAngka / 1))
 {
-    if(noAngkot <= angkotBeroperasi)
+    console.log("Ini bukan angka!");
+}else
+{
+    for(angka; angka <= jmlhAngka; angka++)
     {
-        console.log("Angkot dengan No. " + noAngkot + " beroperasi dengan baik.");
-    }else
-    {
-        console.log("Angkot dengan No. " + noAngkot + " sedang tidak beroperasi.");
+
+        // Pengkondisian
+        if(angka % 2 == 0)
+        {
+            console.log("Angka " + angka + " adalah bilangan genap.");
+        }else if(angka % 1 == 0)
+        {
+            console.log("Angka " + angka + " adalah bilangan ganjil.");
+        }else
+        {
+            console.log("Ini bukan angka!");
+        }
+
     }
 }
