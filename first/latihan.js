@@ -1,8 +1,4 @@
-var jmlhAngkot = 10;
-var noAngkot = 1;
-
-while(noAngkot <= jmlhAngkot)
+for(var nilaiAwal = 1; nilaiAwal <= 10; nilaiAwal++)
 {
-    console.log("Angkot dengan nomor " + noAngkot + " beroperasi dengan baik.");
-    noAngkot++;
+    console.log("Ini nilai ke " + nilaiAwal);
 }
