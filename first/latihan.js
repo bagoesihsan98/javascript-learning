@@ -1,27 +1,19 @@
-var angka = 0;
-var jmlhAngka = prompt("Masukkan jumlah angka");
+var jmlhAngkot = 10;
+var angkotBeroperasi = 6;
 
-// Pengulangan dan Pengkondisian
-
-if(isNaN(jmlhAngka / 1))
+for(var noAngkot = 1; noAngkot <= jmlhAngkot; noAngkot++)
 {
-    console.log("Ini bukan angka!");
-}else
-{
-    for(angka; angka <= jmlhAngka; angka++)
+    if(noAngkot == 5)
     {
-
-        // Pengkondisian
-        if(angka % 2 == 0)
-        {
-            console.log("Angka " + angka + " adalah bilangan genap.");
-        }else if(angka % 1 == 0)
-        {
-            console.log("Angka " + angka + " adalah bilangan ganjil.");
-        }else
-        {
-            console.log("Ini bukan angka!");
-        }
-
+        console.log("Angkot No. " + noAngkot + " sedang lembur.");
+    }else if(noAngkot == 7 || noAngkot == 10)
+    {
+        console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.")
+    }else if (noAngkot == 8)
+    {
+        console.log("Angkot No. " + noAngkot + " sedang cuti.");
+    }else
+    {
+        console.log("Angkot No. " + noAngkot + " sedang beroperasi dengan baik.");
     }
 }
