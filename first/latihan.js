@@ -1,29 +1,59 @@
-var segitiga = '';
+var segitigaAtas = '';
+var segitigaBawah = '';
 
 for(var i = 0; i <= 5; i++)
 {
-    for(var j = 5; j > i; j--)
+    for(var j = 5; j >= i; j--)
     {
-        segitiga += '* ';
+        segitigaAtas += '* ';
     }
 
     for(var j = 0; j < i; j++)
     {
-        segitiga += '  ';
+        segitigaAtas += '  ';
     }
 
     for(var j = 0; j < i; j++)
     {
-        segitiga += '  ';
+        segitigaAtas += '  ';
     }
 
-    for(var j = 5; j > i; j--)
+    for(var j = 5; j >= i; j--)
     {
-        segitiga += '* ';
+        segitigaAtas += '* ';
     }
 
-    segitiga += '\n';
+    segitigaAtas += '\n';
+
 }
 
-console.log(segitiga);
 
+for(var j = 0; j <= 5; j++)
+{
+
+    for(var k = 0; k <= j; k++)
+    {
+        segitigaBawah += '* ';
+    }
+
+    for(var k = 5; k > j; k--)
+    {
+        segitigaBawah += '  ';
+    }
+
+    for(var k = 5; k > j; k--)
+    {
+        segitigaBawah += '  ';
+    }
+
+    for(var k = 0; k <= j; k++)
+    {
+        segitigaBawah += '* ';
+    }
+
+    segitigaBawah += '\n';
+}
+
+
+console.log(segitigaAtas);
+console.log(segitigaBawah);
