@@ -1,19 +1,20 @@
-var jmlhAngkot = 10;
-var angkotBeroperasi = 6;
+var angka = parseInt(prompt("Masukkan angka anda"));
 
-for(var noAngkot = 1; noAngkot <= jmlhAngkot; noAngkot++)
+switch(angka)
 {
-    if(noAngkot == 5)
-    {
-        console.log("Angkot No. " + noAngkot + " sedang lembur.");
-    }else if(noAngkot == 7 || noAngkot == 10)
-    {
-        console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.")
-    }else if (noAngkot == 8)
-    {
-        console.log("Angkot No. " + noAngkot + " sedang cuti.");
-    }else
-    {
-        console.log("Angkot No. " + noAngkot + " sedang beroperasi dengan baik.");
-    }
+    case 1 :
+        console.log("Anda memasukkan angka " + angka);
+    break;
+
+    case 2 :
+        console.log("Anda memasukkan angka " + angka);
+    break;
+
+    case 3 :
+        console.log("Anda memasukkan angka " + angka);
+    break;
+
+    default :
+        console.log("Angka yang anda masukkan belum terdaftar / bukan merupakan angka.");
+    break;
 }
