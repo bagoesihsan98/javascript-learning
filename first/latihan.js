@@ -1,20 +1,12 @@
-var angka = parseInt(prompt("Masukkan angka anda"));
+var segitiga = '';
 
-switch(angka)
+for(var i = 0; i <= 5; i++)
 {
-    case 1 :
-        console.log("Anda memasukkan angka " + angka);
-    break;
-
-    case 2 :
-        console.log("Anda memasukkan angka " + angka);
-    break;
-
-    case 3 :
-        console.log("Anda memasukkan angka " + angka);
-    break;
-
-    default :
-        console.log("Angka yang anda masukkan belum terdaftar / bukan merupakan angka.");
-    break;
+    for(var j = 0; j <= i; j++)
+    {
+        segitiga += ' * ';
+    }
+    segitiga += '\n';
 }
+
+console.log(segitiga);
