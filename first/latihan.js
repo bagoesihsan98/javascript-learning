@@ -1,59 +1,69 @@
-var segitigaAtas = '';
-var segitigaBawah = '';
+// Menangkap pilihan dari pemain
+var pilihanPemain = prompt("Silahkan pilih : Gajah, Semut, atau Orang \n Besar Kecil huruf diperhatikan");
 
-for(var i = 0; i <= 5; i++)
+// Menangkap pilihan dari computer
+// Membuat bilangan random
+var pilihanComp = Math.random();
+
+// Menentukan pilihan computer berdasarkan angka random
+if(pilihanComp < 0.34)
 {
-    for(var j = 5; j > i; j--)
+    pilihanComp = "Gajah";
+}else if(pilihanComp >= 0.34 && pilihanComp < 0.66)
+{
+    pilihanComp = "Semut";
+}else
+{
+    pilihanComp = "Orang";
+}
+// Menentukan aturan main
+var resultMain = '';
+var cobaLagi = true;
+
+while(cobaLagi)
+{
+    if( pilihanPemain === pilihanComp )
     {
-        segitigaAtas += '  ';
+        resultMain = 'Draw';
+    }else if(pilihanPemain == "Gajah")
+    {
+        // Menentukan hasil dari pilihan computer
+        if(pilihanComp == "Orang")
+        {
+            resultMain = "Win";
+        }else if(pilihanComp == "Semut")
+        {
+            resultMain = "Lose";
+        }
+    }else if(pilihanPemain == "Orang")
+    {
+        // Menentukan hasil dari pilihan computer
+        if(pilihanComp == "Semut")
+        {
+            resultMain = "Win";
+        }else if(pilihanComp == "Gajah")
+        {
+            resultMain = "Lose";
+        }
+    }else if(pilihanPemain == "Semut")
+    {
+        // Menentukan hasil dari pilihan computer
+        if(pilihanComp == "Gajah")
+        {
+            resultMain = "Win";
+        }else if(pilihanComp == "Orang")
+        {
+            resultMain = "Lose";
+        }
+    }else
+    {
+        resultMain = "Error";
     }
 
-    for(var j = 0; j <= i; j++)
-    {
-        segitigaAtas += '* ';
-    }
+    alert("Kamu memilih " + pilihanPemain + " dan komputer memilih " + pilihanComp +"\n Hasil : Kamu " + resultMain);
 
-    for(var j = 0; j < i; j++)
-    {
-        segitigaAtas += '* ';
-    }
-
-    for(var j = 5; j > i; j--)
-    {
-        segitigaAtas += '  ';
-    }
-
-    segitigaAtas += '\n';
+    cobaLagi = confirm("Ingin coba lagi ?");
 
 }
-
-
-for(var j = 0; j <= 5; j++)
-{
-
-    for(var k = 0; k < j; k++)
-    {
-        segitigaBawah += '  ';
-    }
-
-    for(var k = 5; k >= j; k--)
-    {
-        segitigaBawah += '* ';
-    }
-
-    for(var k = 5; k > j; k--)
-    {
-        segitigaBawah += '* ';
-    }
-
-    for(var k = 0; k < j; k++)
-    {
-        segitigaBawah += '  ';
-    }
-
-    segitigaBawah += '\n';
-}
-
-
-console.log(segitigaAtas);
-console.log(segitigaBawah);
+// Tampilkan Hasilnya
+alert("Terimakasih sudah bermain game ini");
