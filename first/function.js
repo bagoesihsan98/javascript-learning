@@ -40,3 +40,20 @@ function faktorial(n)
 }
 
 console.log(faktorial(5));
+
+// Function Declaration & Function Expression
+
+// Function Declaration
+function belajarFunctionSatu()
+{
+    console.log("Ini Fungsi Deklarasi");
+}
+
+// Function Expression
+var belajarFunctionDua = function()
+{
+    console.log("Ini Fungsi Ekspresi");
+}
+
+belajarFunctionSatu();
+belajarFunctionDua();
