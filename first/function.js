@@ -32,12 +32,11 @@ iniVariabel();
 
 // Rekursif
 
-function tampilAngka(n)
+function faktorial(n)
 {
-    if(n == 0) return;
-
+    if(n === 0) return 1;
     console.log(n);
-    tampilAngka(n-1);
+    return n * faktorial(n - 1);
 }
 
-tampilAngka(10);
+console.log(faktorial(5));
